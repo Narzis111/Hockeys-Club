@@ -34,11 +34,41 @@ body{
   </style>
 </head>
 <body>
-<header class="mx-auto, lg:px-24 px-8">
+<header class="mx-auto lg:px-24 px-8">
+  <div class="navbar">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content text-title_color mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a class="text-btn_color">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-title_color font-extrabold lg:text-4xl text-2xl">Hockey<span class="text-btn_color">’</span>s</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 text-title_color">
+        <li><a class="text-btn_color">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end space-x-8">
+      <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i> 
+      <a class="rounded-xl bg-btn_color p-3">Get Ticket</a>
+    </div>
+  </div>
 
   <!-- Nav bar completed -->
   <div>
-    <div class="carousel py-12 w-full">
+    <div class="carousel py-2 w-full">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="./images/1.png" class="w-full" />
         <div class="bg-title_color p-8 absolute lg:right-10 lg:bottom-10 lg:w-1/2 -bottom-60 w-full rounded-md bg-title_color text-white">
@@ -75,8 +105,8 @@ body{
   </div>
 </header>
 
-<main class="mx-auto lg:px-24 px-8">
-    <section class="lg:py-24 py-8">
+<main class="mx-auto lg:px-24 px-8 mt-24">
+    <section class="mx-auto lg:px-24 px-8">
         <div class="text-center">
             <h1 class="text-title_color text-2xl lg:text-4xl font-bold">Professional Hockeys Club</h1>
             <p class="text-p_color flex justify-center py-6">
@@ -88,36 +118,36 @@ body{
                 
                 <div class="card lg:w-60 w-full">
                     <div class="card-body items-center text-center">
-                      <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                      <h3 class="card-title">Shoes!</h3>
+                      <div class="radial-progress text-btn_color" style="--value:87;" role="progressbar">87%</div>
+                      <h3 class="card-title">Prayer Facility</h3>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                   </div>
                   <div class="card lg:w-60 w-full">
                     <div class="card-body items-center text-center">
-                        <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                      <h3 class="card-title">Shoes!</h3>
+                        <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
+                      <h3 class="card-title">Experienced Coach</h3>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                   </div>
                   <div class="card lg:w-60 w-full">
                     <div class="card-body items-center text-center">
-                        <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                      <h3 class="card-title">Shoes!</h3>
+                        <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                      <h3 class="card-title">Senior Player</h3>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                   </div>
                   <div class="card lg:w-60 w-full">
                     <div class="card-body items-center text-center">
-                        <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                      <h3 class="card-title">Shoes!</h3>
+                        <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%</div>
+                      <h3 class="card-title">Training Ground</h3>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                   </div>
           </div>
     </section>
     <!-- program  -->
-    <section class="lg:py-24 py-8">
+    <section class="mx-auto lg:px-24 px-8 mb-24"> 
         <div class="text-center">
             <h1 class="text-title_color text-2xl lg:text-4xl font-bold">Professional Hockeys Club</h1>
             <p class="text-p_color flex justify-center py-6">
@@ -164,7 +194,7 @@ body{
         </div> 
     </section>
     <!-- 2 columns product card -->
-    <section class="lg:py-24 py-8">
+    <section class="mx-auto lg:px-24 px-8 mb-24">
       <div class="text-center">
           <h1 class="text-title_color text-2xl lg:text-4xl font-bold">Our New Products</h1>
           <p class="text-p_color flex justify-center py-6">
@@ -376,102 +406,129 @@ body{
         </div>    
 
     </section>
-
-
-
-
-         
-
-
-
-
-  <!-- Contact form
-<section class="form lg:px-24 px-8 mx-auto">
-  <div class="text-center">
-    <h1>Contact Us</h1>
-    <p>Contact Us
-      We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p>
-  </div>
-  <div class="grid grid-cols-1 lg:grid-cols-3">
-    <div class="lg:col-span-2">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div>
-          <label for="Your Name">our Name</label>
-          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+    <!-- Contact  -->
+    <section class="mx-auto lg:px-24 px-8">
+      <div class="text-center">
+          <h1 class="text-title_color text-2xl lg:text-4xl font-bold">Get In Touch</h1>
+          <p class="text-p_color flex justify-center py-6">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+          </p>
         </div>
-        <div>
-          <label for="Your Name">our Place</label>
-          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-        </div>
-        <div>
-          <label for="Your Name">our Name</label>
-          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-        </div>
-        <div>
-          <label for="Your Name">our Place</label>
-          <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-        </div>
-      </div>
-      <div>
-          <label for="Your Name">Text area</label>
-          <textarea class="textarea w-11/12 textarea-bordered" placeholder="Your Message"></textarea>
-      
-    </div>
-  </div>        
-  <div>
-    <div>
-      <i class="fa-solid fa-location-crosshairs"></i>
-    <h2>Company information:</h2>
-    <p>
-      Themesberg LLC
-      Tax id: USXXXXXX</p>
-    </div>
-    <div>
-      <i class="fa-solid fa-location-crosshairs"></i>
-    <h2>Company information:</h2>
-    <p>
-      Themesberg LLC
-      Tax id: USXXXXXX</p>
-    </div>
-      <div>
-      <i class="fa-solid fa-location-crosshairs"></i>
-    <h2>Company information:</h2>
-    <p>
-      Themesberg LLC
-      Tax id: USXXXXXX</p>
-    </div>
-    
-  </div>
-</div>
-<div class="hero" style="background-image: url(./images/banner.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center items-center text-neutral-content">
-                    <div class="w-5/6 py-24">
-                        <div>
-                            <h1 class="mb-5 text-3xl lg:text-7xl text-font-title font-extrabold">We Provide Effective
-                                <br> Legal Solutions
-                            </h1>
-                            <p class="py-6">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour.</p>
-
-                        </div>
-                        <div class="flex justify-evenly my-2">
-                            <input type="text" placeholder="Search your services" class="input w-4/6 bg-white"
-                                required />
-                            <button class="bg-btn w-36 rounded-md">Search</button>
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="border-2 text-gray-400 p-4 rounded-xl">
+            <div>
+              <div class="p-8 bg-[#bced6d] rounded-xl" >
+                <img src="./images/Group 1171275317.png" alt="">
+                <p class="text-p_color">Phone Number : 
+                </p>
+                <h2 class="text-title_color font-extrabold">(+62) 123-321-543</h2>
+              </div>
+              <div class="p-8 bg-[#fddd5f] rounded-xl mt-3" >
+                <img src="./images/Group 1171275318.png" alt="">
+                <p class="text-p_color">Email: 
+                </p>
+                <h2 class="text-title_color font-extrabold">hockeys@support.com</h2>
+              </div>
+              <div class="p-8 bg-[#629cf3] rounded-xl mt-3" >
+                <img src="./images/Group 1171275321.png" alt="">
+                <p class="text-p_color">Location: 
+                </p>
+                <h2 class="text-title_color font-extrabold">152/1 Mohakhali Wireless Gate</h2>
+              </div>
+              
             </div>
- 
-  
-</section> -->
-  
-</main>
-<footer>
+          </div>
+          
+          <div class="lg:col-span-2 mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <label for="Your Name">Your Name</label>
+                <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs bg-gray-100" />
+              </div>
+              <div>
+                <label for="Your Email">Your Email</label>
+                <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-gray-100" />
+              </div>
+              <div>
+                <label for="Subject">Subject</label>
+                <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs bg-gray-100" />
+              </div>
+              <div>
+                <label for="Phone Number">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs bg-gray-100" />
+              </div>
+            </div>
+            <div>
+                <label for="Message">Message</label>
+                <textarea class="textarea w-full h-72 textarea-bordered bg-gray-100" placeholder="Enter your message"></textarea>
+            
+          </div>
+          <div>
+            <button class="bg-btn_color w-full p-3 rounded-xl">Send Message</button>
+        
+      </div>
+        </div>
+        </div>
+    
+      <div class="bg-gray-100 rounded-xl py-9 mx-auto mt-14">
+        <h2 class="text-center font-extrabold mt-">Social Media</h2>
+        <div class="text-center mt-6">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      
+     
+    </section>
 
-</footer>
+</main>
+
+  <footer class="footer py-10 lg:px-10 px-8 mx-auto bg-black text-[#FFFFFF]">
+    
+    <div class="text-center flex justify-between mx-auto">
+      <aside class="w-80 lg:text-left text-center space-y-3">
+      <h2 class="text-3xl font-extrabold text-white">Get In Touch</h2>
+      <p >Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      <p><i class="fa-solid fa-envelope text-btn_color"></i> hockeys@support.com</p>
+      <p><i class="fa-solid fa-phone text-btn_color"></i> (+62) 123-321-543</p>
+    </aside>
+  </div> 
+    <div class="lg:text-left text-center flex justify-between mx-auto">
+      <nav class="flex-1">
+        <header class="footer-title text-white font-bold">Company</header>
+        <ul class="space-y-3">
+        <li>About us</li>
+        <li>Leadership</li>
+        <li>Careers</li>
+        <li>News & Article</li>
+        <li>Legal Notice</li>
+      </ul> 
+      </nav> 
+      <nav class="flex-1">
+        <header class="footer-title text-white font-bold">Support</header>
+        <ul class="space-y-3">
+          <li>Help Center</li>
+          <li>FAQ</li>
+          <li>Ticket Support</li>
+          <li>News & Article</li>
+          <li>Contact Us</li>
+        </ul> 
+      </nav> 
+    </div>
+    <div class="flex-1 lg:text-left text-center mx-auto">
+    <nav>
+      <header class="footer-title text-white font-bold">Services</header> 
+      <ul class="space-y-3"><li>Academy</li>
+      <li>Group Lesson</li>
+      <li>Private Lesson</li>
+      <li>Hockeys for Kids</li>
+      <li>Hockeys for Adults</li>
+    </ul>
+    </nav>
+  </div>
+  </footer>
+
 </body>
 </html>
 
